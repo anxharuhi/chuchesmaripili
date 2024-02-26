@@ -1,104 +1,81 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-<meta charset="UTF-8">
-<title>Chuches MariPili</title>
-<link rel="stylesheet" href="css/limpiarGenericos.css">
-<link rel="stylesheet" href="css/estilos.css">
-<link rel="stylesheet" href="css/slider.css">
-<script src="https://kit.fontawesome.com/887ee4ad6e.js"
-	crossorigin="anonymous"></script>
-<script src="js/slider.js" type="text/javascript"></script>
-<style>
-#botonCambiaFoto {
-	padding: 10px;
-	background: #1f4b81;
-	color: aliceblue;
-	cursor: pointer;
-}
-</style>
-<script type="text/javascript">
-	window.onload = function() {
-
-		let usuario;
-		let xhr = new XMLHttpRequest();
-		xhr.onreadystatechange = function() {
-			if (xhr.readyState === 4) {
-				if (xhr.status === 200) {
-					try {
-						usuario = JSON.parse(xhr.responseText);
-
-						document.getElementById('usuario').innerHTML = usuario.nombre
-								+ " <a href='CerrarSesion'>CerrarSesión</a>";
-					} catch (e) {
-						// TODO: handle exception
-						location.href = "login.html";
-					}
-				}
-			}
-		};
-
-		xhr.open("GET", "Logueo", false);
-		xhr.setRequestHeader("Content-Type", "application/json");
-		xhr.send();
-
-	}
-</script>
-
+	<meta charset="UTF-8">
+	<title>Chuches MariPili</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+		rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/resetcss.css">
+	<link rel="stylesheet" href="css/general.css">
+	<link rel="stylesheet" href="css/index.css">
 </head>
+
 <body>
 
 	<div id="container">
-		<header>
-			<div class="cabecera">
-				<div id="usuario"></div>
-				<img src="img/logo.png" title="Logo Naves" alt="Logo">
-				<h1 id="titulo">Web Federación Nebrijanos Unidos</h1>
+		<header class="header">
+			<div class="flexrow flexcenter">
+				<img src="img/logo.jpeg" alt="" width="175">
+				<h1 class="patrick-hand-header">Chuches Maripili</h1>
 			</div>
 
 
-			<div class="login">
-				<!-- Espacio para el login -->
-
-			</div>
+			<!-- <div class="login">
+			</div> -->
 
 		</header>
-		<nav>
-			<ul>
-				<li><a href="index.html">Home</a></li>
-				<li><a href="signups.html">Sign Ups</a></li>
-				<li><a href="galeria_conJson.html">xxxx</a></li>
-				<li><a href="#">xxxx</a></li>
-				<li><a href="#">xxx</a></li>
+		<nav class="navbar">
+			<ul id="topmenu">
+				<li><a href="index.html" class="navbarlink">Inicio</a></li>
+				<li><a href="categorias.html" class="navbarlink">Categorias</a></li>
+				<li><a href="chuches.html" class="navbarlink">Chuches</a></li>
+				<li><a href="login.html" class="navbarlink">Cuenta</a></li>
 			</ul>
 		</nav>
+
+
 		<section>
-
-			<!-- Estoy trabajando aquí -->
-
-
-
-
-			<div class="destacados">
-				<a href="#">
-					<div class="destacado">
-						<img src="img/icon1.png">
-						<h2>Instrucciones</h2>
+			<div class="highlightscontainer">
+				<div class="highlights">
+					<div class="card">
+						<img src="img/products/risi-risketos-bolsa-de-80g.jpg" alt="Risketos Original" width=70%>
+						<h4> Risketos Original, 80gr</h4>
+						<h5> 1.19€</h5>
 					</div>
-				</a> <a href="#">
-					<div class="destacado">
-						<img src="img/icon2.png">
-						<h2>Historia</h2>
+					<div class="card"> <img src="img/products/risi-risketos-bolsa-de-80g.jpg" alt="Risketos Original"
+							width=70%>
+						<h4> Risketos Original, 80gr</h4>
+						<h5> 1.19€</h5>
 					</div>
-				</a> <a href="#">
-					<div class="destacado">
-						<img src="img/icon3.png">
-						<h2>Galería</h2>
+					<div class="card"> <img src="img/products/risi-risketos-bolsa-de-80g.jpg" alt="Risketos Original"
+							width=70%>
+						<h4> Risketos Original, 80gr</h4>
+						<h5> 1.19€</h5>
 					</div>
-				</a>
+					<div class="card"> <img src="img/products/risi-risketos-bolsa-de-80g.jpg" alt="Risketos Original"
+							width=70%>
+						<h4> Risketos Original, 80gr</h4>
+						<h5> 1.19€</h5>
+					</div>
+					<div class="card"> <img src="img/products/risi-risketos-bolsa-de-80g.jpg" alt="Risketos Original"
+							width=70%>
+						<h4> Risketos Original, 80gr</h4>
+						<h5> 1.19€</h5>
+					</div>
+					<div class="card"> <img src="img/products/risi-risketos-bolsa-de-80g.jpg" alt="Risketos Original"
+							width=70%>
+						<h4> Risketos Original, 80gr</h4>
+						<h5> 1.19€</h5>
+					</div>
+				</div>
 			</div>
 			<div class="info">
-				<h3>Info</h3>
+				<h3>Sobre nosotros</h3>
 				<i class="fa-solid fa-arrows-up-to-line fa-2xl"></i>
 				<p>Sed ut perspiciatis unde omnis iste natus error sit
 					voluptatem accusantium doloremque laudantium, totam rem aperiam,
@@ -132,13 +109,14 @@
 		</section>
 		<hr>
 		<footer>
-			<ul>
-				<li><a href="index.html">Home</a></li>
-				<li><a href="#">Naves</a></li>
-				<li><a href="#">Blog</a></li>
-				<li><a href="#">Contacto</a></li>
-				<li><a href="#">Aviso Legal</a></li>
-				<li><a href="#">Cookies</a></li>
+			<ul class="flexrow flexright">
+				<li><a class="nunito-regular" href="index.html">Inicio</a></li>
+				<li><a class="nunito-regular" href="categorias.html">Categorias</a></li>
+				<li><a class="nunito-regular" href="chuches.html">Chuches</a></li>
+				<li><a class="nunito-regular" href="login.html">Cuenta</a></li>
+				<li><a class="nunito-regular" href="contacto.html">Contacto</a></li>
+				<li><a class="nunito-regular" href="avisolegal.html">Aviso Legal</a></li>
+				<li><a class="nunito-regular" href="cookies.html">Cookies</a></li>
 			</ul>
 		</footer>
 	</div>

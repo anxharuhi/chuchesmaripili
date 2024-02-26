@@ -1,0 +1,46 @@
+.highlights {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 25px;
+    grid-row-gap: 10px;
+    justify-content: center;
+    margin: 15px 30px 0px 30px;
+    padding: 0% 10%;
+    width: 90%;
+}
+
+.card {
+    margin: 5px;
+    padding: 40px 10px 10px 10px;
+    text-align: center;
+    width: 200px;
+    height: 250px;
+    border: 6px solid #b47886;
+    border-radius: 40px;
+    background-color: white;
+    color: #444;
+}
+
+.card img {
+}
+
+.card h4 {
+    padding: 25px 0px 20px 0px;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+.card h5 {
+    font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+.highlightscontainer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.info h3 {
+
+}

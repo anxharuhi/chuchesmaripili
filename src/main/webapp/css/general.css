@@ -1,0 +1,125 @@
+body {
+    background-color: white;
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+header {
+    background-color: #b47886;
+    height: 200px;
+}
+
+.flexrow {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    height: 100%;
+}
+
+.flexcenter {
+    justify-content: center;
+    align-items: center;
+}
+
+.flexright {
+    justify-content: flex-end;
+    align-items: center;
+}
+
+
+/* #title {
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-size: 50px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+    color: white;
+    font-style: normal;
+    font-variant: small-caps;
+    text-shadow: -1px 3px 0 #000,
+        1px 5px 0 #000,
+        1px -1px 0 #000,
+        -1px -1px 0 #000;
+    padding-left: 30px;
+} */
+
+#menu {
+    padding: 10px;
+    border-style: solid;
+}
+
+.navbar {
+    display: block;
+    height: 100px;
+    line-height: 5rem;
+    background-color: #fff;
+    width: 100%;
+    text-align: center;
+}
+
+.navbar ul {
+    display: inline-block;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar li {
+    display: inline;
+    align-items: center;
+    background-color: #b47886;
+    border: 1px solid #555;
+    border-radius: 12px;
+    box-sizing: border-box;
+    padding: 10px 5px 5px 5px;
+    color: #fff;
+    cursor: pointer;
+    margin-left: 4px;
+    margin-right: 4px;
+}
+
+.navbar ul li a {
+    display: inline-block;
+    text-align: center;
+    padding: 2px 16px;
+    height: 20px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: "Nunito", sans-serif;
+    font-weight: 400;
+}
+
+footer {
+    background-color: #555;
+    cursor: pointer;
+    height: 50px;
+}
+
+footer ul li {
+    margin: 15px;
+}
+
+footer ul li a {
+    color: #BBB;
+    text-decoration: none;
+}
+
+.patrick-hand-header {
+    font-family: "Patrick Hand";
+    font-weight: 700;
+    font-style: normal;
+    font-size: 70px;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    color: white;
+    font-style: normal;
+    font-variant: small-caps;
+    text-shadow: -1px 3px 0 #000,
+        3px 7px 0 #000,
+        1px -1px 0 #000,
+        -1px -1px 0 #000;
+    padding-left: 30px;
+}
