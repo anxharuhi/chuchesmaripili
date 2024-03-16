@@ -1,46 +1,32 @@
-.highlights {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    grid-column-gap: 25px;
-    grid-row-gap: 10px;
-    justify-content: center;
-    margin: 15px 30px 0px 30px;
-    padding: 0% 10%;
-    width: 90%;
-}
+.hero-image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("./../img/iwona-castiello-d-antonio-dnMLdR814aA-unsplash.jpg");
+    height: 600px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
 
-.card {
-    margin: 5px;
-    padding: 40px 10px 10px 10px;
+  .hero-text {
     text-align: center;
-    width: 200px;
-    height: 250px;
-    border: 6px solid #b47886;
-    border-radius: 40px;
-    background-color: white;
-    color: #444;
-}
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    width: 80%;
 
-.card img {
-}
-
-.card h4 {
-    padding: 25px 0px 20px 0px;
-    font-family: "Comic Sans MS", cursive, sans-serif;
-}
-
-.card h5 {
-    font-family: "Comic Sans MS", cursive, sans-serif;
-}
-
-.highlightscontainer {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.info h3 {
-
-}
+    font-family: "Patrick Hand";
+    font-weight: 700;
+    font-style: normal;
+    font-size: 62px;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    color: white;
+    font-style: normal;
+    font-variant: small-caps;
+    text-shadow: -1px 3px 0 #000,
+        3px 7px 0 #000,
+        1px -1px 0 #000,
+        -1px -1px 0 #000;
+  }
