@@ -12,6 +12,28 @@ header {
     height: 200px;
 }
 
+nav {
+    display: flex; /* 1 */
+    justify-content: space-between; /* 2 */
+    padding: 1rem 2rem; /* 3 */
+    background: #cfd8dc; /* 4 */
+  }
+  
+nav ul {
+    display: flex; /* 5 */
+    list-style: none; /* 6 */
+}
+
+nav li {
+    padding-left: 1rem; /* 7! */
+}
+
+.navicons {
+    padding-right: 10px;
+}
+  
+
+
 .flexrow {
     display: flex;
     flex-direction: row;
@@ -35,9 +57,25 @@ header {
 }
 
 .navbar {
+    position: sticky;
+    top: 0px;
+    z-index: 100;   
+    background-color: #555;
+    justify-content: center;
+}
+
+.navbar ul {
+    align-items: center;
+    justify-items: center;
+}
+
+.navicons {
+    padding-right: 10px;
+}
+
+/* .navbar {
     display: block;
-    height: 100px;
-    line-height: 5rem;
+    height: 30px;
     background-color: #555;
     width: 100%;
     text-align: center;
@@ -51,34 +89,34 @@ header {
     list-style: none;
     padding: 0;
     margin: 0;
-    margin-top: 7px;
+    align-items: center;
+    justify-items: center;
+    vertical-align: middle;
 }
 
-.navbar ul li {
+/*.navbar ul li {
     display: inline;
     align-items: center;
     background-color: #b47886;
-    border: 1px solid #eee;
-    border-radius: 4px;
     box-sizing: border-box;
     padding: 10px 15px 5px 15px;
     color: #fff;
     cursor: pointer;
     margin-left: 10px;
     margin-right: 10px;
-}
+}*/
 
 .navbar ul li a {
     display: inline-block;
     text-align: center;
-    padding: 2px 16px;
-    height: 20px;
+    justify-content: center;
+    padding: 0px 16px;
     color: #fff;
     text-decoration: none;
     font-size: 20px;
     font-family: "Nunito", sans-serif;
     font-weight: 400;
-}
+} 
 
 footer {
     background-color: #555;
@@ -90,7 +128,7 @@ footer ul li {
 }
 
 footer ul li a {
-    color: #BBB;
+    color: #CCC;
     text-decoration: none;
 }
 
